@@ -40,11 +40,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 18b79c8df164e584d9573b89dad8cd2f, type: 3}
     totalSpriteSurfaceArea: 124177
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 1b73a200f2a266d4baa64cdf9ba4f63c, type: 3}
@@ -706,5 +709,6 @@ SpriteAtlas:
   - wall_fountain_mid_red_anim_f1
   - wizzard_f_run_anim_f0
   - orc_shaman_idle_anim_f1
+  m_RenderDataMap: {}
   m_Tag: SpriteAtlas
   m_IsVariant: 0
