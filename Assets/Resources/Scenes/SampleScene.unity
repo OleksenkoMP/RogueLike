@@ -314,6 +314,8 @@ MonoBehaviour:
   endRooms:
   - {fileID: 2360143197104084025, guid: 3faba4550979e394abd2f1d1215646f1, type: 3}
   rooms: []
+  id: 0
+  curId: 0
 --- !u!4 &1133874977
 Transform:
   m_ObjectHideFlags: 0

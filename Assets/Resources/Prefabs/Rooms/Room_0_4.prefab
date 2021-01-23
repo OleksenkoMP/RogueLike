@@ -59,8 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4083e7c0a790749b02dc75811261ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorL: 1
-  DoorT: 0
+  DoorL: 0
+  DoorT: 1
   DoorR: 0
   DoorB: 0
 --- !u!1 &3020343293422400140
