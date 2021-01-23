@@ -44,7 +44,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 18b79c8df164e584d9573b89dad8cd2f, type: 3}
-    totalSpriteSurfaceArea: 127249
+    totalSpriteSurfaceArea: 468833
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -100,6 +100,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 5f68a512a928e614fa0a1371bc6996fb, type: 3}
   - {fileID: 21300000, guid: 3fd62f1255b528f4caa8fcc9b67dd635, type: 3}
   - {fileID: 21300000, guid: 3b140322f214be64a8d0b02aadc512da, type: 3}
+  - {fileID: 21300000, guid: ba0bd72245a078b4e938295470522345, type: 3}
   - {fileID: 21300000, guid: 6acf3a221aa505e41b960e88e5a30086, type: 3}
   - {fileID: 21300000, guid: 85fd5b226ae3bdf4aab0ce9be8f6bd4c, type: 3}
   - {fileID: 21300000, guid: ea35bf22a88c78048adbde05571db698, type: 3}
@@ -143,6 +144,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 60b568345ad0b824ab8b2ce193ad1179, type: 3}
   - {fileID: 21300000, guid: 62da8154f754175449c7a2c9b67b592f, type: 3}
   - {fileID: 21300000, guid: 61026654dbece374fa1c0ccfce693773, type: 3}
+  - {fileID: 21300000, guid: 92324e5434678dc4c930e4917e7cd057, type: 3}
   - {fileID: 21300000, guid: 8fe22664be44cde41acb2b9afecd3f0b, type: 3}
   - {fileID: 21300000, guid: 47735c64688cd0e4a90748995cef7d7d, type: 3}
   - {fileID: 21300000, guid: c22f04842964e3946935fc2dabaa51b9, type: 3}
@@ -150,6 +152,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c6c6009452b708c48b8250d581d1f957, type: 3}
   - {fileID: 21300000, guid: 239251b455d25184e905e894e24a3d9e, type: 3}
   - {fileID: 21300000, guid: 5fc734b41575b2644bebdbb577c41fc6, type: 3}
+  - {fileID: 21300000, guid: f81626b4bf2c9cf4e932352243f3e32f, type: 3}
   - {fileID: 21300000, guid: 6b6e2ab449fc7ed41adc649ba99ce9b5, type: 3}
   - {fileID: 21300000, guid: 070c96e43dd636340bf0f14599a08052, type: 3}
   - {fileID: 21300000, guid: af96f8e46346b8d4785f75165c422af3, type: 3}
@@ -209,6 +212,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e56319971568fa849a548d14fce4b1e0, type: 3}
   - {fileID: 21300000, guid: c34e0db77eff354489fbedb67512ec42, type: 3}
   - {fileID: 21300000, guid: 92c28ac7978986f4b937cf336ac08489, type: 3}
+  - {fileID: 21300000, guid: b7df7bc7b07973145bea05a7813aaddf, type: 3}
   - {fileID: 21300000, guid: 27715fc7a08372d428a3c96820e583f2, type: 3}
   - {fileID: 21300000, guid: 230756d7193239a48930cd79df1e0928, type: 3}
   - {fileID: 21300000, guid: 5180a2f7ed40da64eaea9a080ab9abb6, type: 3}
@@ -238,6 +242,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c46f39d8160ac6848bb0b4a06498d5c0, type: 3}
   - {fileID: 21300000, guid: b16db2e8bfb6b3c4fb397d3466bbfb20, type: 3}
   - {fileID: 21300000, guid: 4d429cf8288b5b548885548361877cde, type: 3}
+  - {fileID: 21300000, guid: ce542ef8df6af384ca534709b194656a, type: 3}
   - {fileID: 21300000, guid: bc82c029a6546aa4c886b40759ba2789, type: 3}
   - {fileID: 21300000, guid: 47609b2975c56c647869b6afcabf798f, type: 3}
   - {fileID: 21300000, guid: 38d19c39eeed9d041aa27ccf9e1c44eb, type: 3}
@@ -318,6 +323,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: db95576c3fc6a9d4fb09945f76557341, type: 3}
   - {fileID: 21300000, guid: e276e76c533657f41acd2446f6de1262, type: 3}
   - {fileID: 21300000, guid: 2130cd6c8a194f24ea63497568ce03f2, type: 3}
+  - {fileID: 21300000, guid: cd5c057cf0e608842b23ad6a321d2f44, type: 3}
   - {fileID: 21300000, guid: 37e4238c3e1539b48b0b420b69dd1248, type: 3}
   - {fileID: 21300000, guid: d0ce929cdb45f1348bb3912559124ca9, type: 3}
   - {fileID: 21300000, guid: 1c5787ac25c335a419545e3924dd251c, type: 3}
@@ -442,6 +448,7 @@ SpriteAtlas:
   - orc_warrior_run_anim_f3
   - wall_left_out_corner
   - swampy_idle_anim_f1
+  - fantasy empty playboard
   - swampy_run_anim_f0
   - doors_frame_left
   - wogol_run_anim_f2
@@ -485,6 +492,7 @@ SpriteAtlas:
   - muddy_run_anim_f2
   - wizzard_f_idle_anim_f2
   - weapon_axe
+  - card vampire back
   - skelet_run_anim_f2
   - wall_inner_corner_l_top_left
   - wall_inner_corner_l_top_rigth
@@ -492,6 +500,7 @@ SpriteAtlas:
   - big_zombie_idle_anim_f0
   - zombie_idle_anim_f2
   - orc_warrior_idle_anim_f1
+  - card vampire purple alt shape green gem
   - weapon_anime_sword
   - floor_3
   - goblin_run_anim_f0
@@ -551,6 +560,7 @@ SpriteAtlas:
   - lizard_f_run_anim_f2
   - swampy_run_anim_f1
   - elf_m_run_anim_f0
+  - card vampire golden
   - big_demon_run_anim_f1
   - skelet_run_anim_f3
   - orc_shaman_run_anim_f0
@@ -580,6 +590,7 @@ SpriteAtlas:
   - imp_run_anim_f3
   - wizzard_m_idle_anim_f1
   - orc_warrior_idle_anim_f3
+  - card vampire purple alt shape green gem 1
   - knight_f_run_anim_f0
   - goblin_idle_anim_f1
   - wizzard_m_run_anim_f2
@@ -660,6 +671,7 @@ SpriteAtlas:
   - ogre_idle_anim_f2
   - wall_side_front_right
   - wall_corner_bottom_left
+  - card vampire iron
   - wall_side_top_left
   - wall_right
   - orc_shaman_idle_anim_f2
