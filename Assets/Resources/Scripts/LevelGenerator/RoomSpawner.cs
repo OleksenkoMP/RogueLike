@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomSpawner : MonoBehaviour
 {
-    public int SizeOfGeneration = -1;
+    public int SizeOfGeneration = 1;
     public int openingDirection;
     // 1 = need top door
     // 2 = need bottom door
@@ -15,8 +15,6 @@ public class RoomSpawner : MonoBehaviour
     private int rand;
     private bool spawned = false;
 
-    private int myId;
-
     private GameObject Grid;
 
     public float waitTime = 10f;
@@ -25,18 +23,8 @@ public class RoomSpawner : MonoBehaviour
     {
         Grid = GameObject.Find("Grid");
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        myId = templates.id;
-        templates.id++;
-
+        Destroy(this.gameObject, waitTime);
         Invoke("Spawn", (0.1f + Random.Range(0f, 0.2f)));
-    }
-    private void Update()
-    {
-        if (templates.curId == myId)
-        {
-            templates.curId++;
-            Invoke("Spawn", 0.1f);
-        }
     }
 
     void Spawn()
@@ -147,6 +135,7 @@ public class RoomSpawner : MonoBehaviour
         return constraints;
     }
 
+    /*
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("SpawnPoint"))
@@ -163,4 +152,5 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
         }
     }
+    */
 }
