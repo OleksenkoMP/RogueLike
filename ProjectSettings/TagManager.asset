@@ -8,6 +8,7 @@ TagManager:
   - Rooms
   - EnemySpawnPoint
   - EnemySpawn
+  - Card
   layers:
   - Default
   - TransparentFX
@@ -47,4 +48,7 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 3916804413
+    locked: 0
+  - name: UI
+    uniqueID: 959542595
     locked: 0
