@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
+    public PlayerMovement player;
+
+
     //Base
     public int STR_Base;
     public int DEX_Base;
@@ -47,6 +50,8 @@ public class Stats : MonoBehaviour
         {
             SetCardEffect(C3.card, 3);
         }
+
+        player.setHero(STR*6, DEX*4, CON*4, INT*0.02F, WIS*0.01F, CHA*0.01F);
     }
 
     private void SetCardEffect(CardsTemplate card, int cardNum)
