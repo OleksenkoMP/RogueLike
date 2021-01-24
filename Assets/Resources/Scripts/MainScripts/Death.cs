@@ -8,6 +8,9 @@ public class Death : MonoBehaviour
     public DontDestroyIt memoryHolder;
     public Stats stats;
     public CardHolder cardHolder;
+
+    public Animator animator;
+
     private void Start()
     {
         memoryHolder = GameObject.FindGameObjectWithTag("MemoryHolder").GetComponent<DontDestroyIt>();
@@ -29,9 +32,10 @@ public class Death : MonoBehaviour
         memoryHolder.CHA = stats.CHA;
 
         //play animations
+        animator.SetTrigger("Died");
 
         //create new map
-        Invoke("Load", 1f);
+        Invoke("Load", 2.6f);
 
 
     }

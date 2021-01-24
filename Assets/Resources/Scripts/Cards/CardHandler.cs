@@ -67,13 +67,13 @@ public class CardHandler : MonoBehaviour
                 Value.GetComponent<TextMeshPro>().text = "CON +" + card.Value1.ToString();
                 break;
             case 3:
-                Value.GetComponent<TextMeshPro>().text = "INT +" + card.Value1.ToString();
+                Value.GetComponent<TextMeshPro>().text = "SPD +" + card.Value1.ToString();
                 break;
             case 4:
-                Value.GetComponent<TextMeshPro>().text = "WIS +" + card.Value1.ToString();
+                Value.GetComponent<TextMeshPro>().text = "ARS +" + card.Value1.ToString();
                 break;
             case 5:
-                Value.GetComponent<TextMeshPro>().text = "CHA +" + card.Value1.ToString();
+                Value.GetComponent<TextMeshPro>().text = "SWS +" + card.Value1.ToString();
                 break;
             default:
                 break;

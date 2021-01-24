@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd8f604673b6bd4881776b3dfe846bd, type: 3}
   m_Name: Card_19
   m_EditorClassIdentifier: 
-  CardName: Essence
+  CardName: Epic Essence
   "\u0421haracteristicId": 1
-  Value1: 10
-  Value2: 5
-  Value3: 2
-  Desc: Give power
+  Value1: 12
+  Value2: 8
+  Value3: 4
+  Desc: 
   ArtWork: {fileID: 21300000, guid: c450693ba44f082448c9281cd1c90338, type: 3}
-  Icon: {fileID: 21300000, guid: d1c70d48d410bb54bb7b4653cf7d4713, type: 3}
+  Icon: {fileID: 21300000, guid: 7b97d6e97a0aeb04185442583e8af5b8, type: 3}
