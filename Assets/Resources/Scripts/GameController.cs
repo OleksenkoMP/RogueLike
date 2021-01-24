@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour
 {
     public Animator InventoryAnimator;
 
+
+
     // Update is called once per frame
     void Update()
     {

@@ -9,6 +9,7 @@ TagManager:
   - EnemySpawnPoint
   - EnemySpawn
   - Card
+  - MemoryHolder
   layers:
   - Default
   - TransparentFX
