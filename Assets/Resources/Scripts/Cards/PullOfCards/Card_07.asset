@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd8f604673b6bd4881776b3dfe846bd, type: 3}
+  m_Name: Card_07
+  m_EditorClassIdentifier: 
+  CardName: Uncommon Essence
+  "\u0421haracteristicId": 1
+  Value1: 3
+  Value2: 2
+  Value3: 1
+  Desc: 
+  ArtWork: {fileID: 21300000, guid: eb1a5d602a629954f9f28dcd3c30d1de, type: 3}
+  Icon: {fileID: 21300000, guid: 7b97d6e97a0aeb04185442583e8af5b8, type: 3}

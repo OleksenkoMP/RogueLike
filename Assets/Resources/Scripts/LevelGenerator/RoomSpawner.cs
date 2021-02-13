@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomSpawner : MonoBehaviour
 {
-    public int SizeOfGeneration = 10;
+    public int SizeOfGeneration = 1;
     public int openingDirection;
     // 1 = need top door
     // 2 = need bottom door
@@ -17,14 +17,14 @@ public class RoomSpawner : MonoBehaviour
 
     private GameObject Grid;
 
-    public float waitTime = 4f;
+    public float waitTime = 10f;
 
     void Start()
     {
         Grid = GameObject.Find("Grid");
-        Destroy(gameObject, waitTime);
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn", (0.1f + Random.Range(0f, 1.9f)));
+        Destroy(this.gameObject, waitTime);
+        Invoke("Spawn", 0.1f + Random.Range(0, 0.2f));
     }
 
     void Spawn()
@@ -74,48 +74,24 @@ public class RoomSpawner : MonoBehaviour
     }
     private void RoomCreator(GameObject[] rooms)
     {
-        Constraints constraints = RoomChecker(templates.rooms.Count >= SizeOfGeneration);
-        Debug.Log("constraints = " + constraints);
-
+        Constraints constraints = RoomChecker(!(templates.rooms.Count < SizeOfGeneration));
         List<GameObject> filteredRooms = new List<GameObject>();
-
-        Debug.Log("rooms = " + rooms.Length);
 
         foreach (var room in rooms){
             if (isRoomCorrect(room, constraints))
                 filteredRooms.Add(room);
-            Debug.Log("isRoomCorrect(room, constraints) = " + isRoomCorrect(room, constraints));
-
         }
 
-        Debug.Log(filteredRooms.Count);
-        rand = Random.Range(0, filteredRooms.Count);
-        Instantiate(filteredRooms[rand], transform.position, filteredRooms[rand].transform.rotation, Grid.transform);
-
-        /*
-        if (templates.rooms.Count < 10)
+        
+        if (filteredRooms.Count > 2)
         {
-            RoomChecker();
-            rand = Random.Range(0, rooms.Length);
-            Instantiate(rooms[rand], transform.position, rooms[rand].transform.rotation, Grid.transform);
+            rand = Random.Range(0, filteredRooms.Count);
         }
-        else
-            switch (openingDirection)
-            {
-                case 1:
-                    Instantiate(templates.bottomRooms[0], transform.position, templates.bottomRooms[0].transform.rotation, Grid.transform);
-                    break;
-                case 2:
-                    Instantiate(templates.topRooms[0], transform.position, templates.topRooms[0].transform.rotation, Grid.transform);
-                    break;
-                case 3:
-                    Instantiate(templates.leftRooms[0], transform.position, templates.leftRooms[0].transform.rotation, Grid.transform);
-                    break;
-                case 4:
-                    Instantiate(templates.rightRooms[0], transform.position, templates.rightRooms[0].transform.rotation, Grid.transform);
-                    break;
-            }
-        */
+        else 
+            rand = 0;
+
+        Instantiate(filteredRooms[rand], transform.position, filteredRooms[rand].transform.rotation, Grid.transform);
+        Destroy(gameObject);
     }
 
     private Constraints RoomChecker(bool isFinalization)
@@ -159,6 +135,7 @@ public class RoomSpawner : MonoBehaviour
         return constraints;
     }
 
+    /*
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("SpawnPoint"))
@@ -175,4 +152,5 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
         }
     }
+    */
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
+
 
 public class RoomTemplates : MonoBehaviour
 {
@@ -11,4 +13,8 @@ public class RoomTemplates : MonoBehaviour
     public GameObject[] endRooms;
 
     public List<GameObject> rooms;
+
+    public int id;
+    public int curId;
+
 }
